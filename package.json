@@ -1,0 +1,21 @@
+{
+  "name": "@auroratide/toggle-switch",
+  "version": "0.1.0",
+  "description": "A toggle switch web component",
+  "keywords": [
+    "toggle",
+    "switch",
+    "element",
+    "web-component"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Timothy Foster",
+    "url": "https://auroratide.com"
+  },
+  "license": "ISC"
+}
