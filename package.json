@@ -14,7 +14,8 @@
   "scripts": {
     "start": "wds --node-resolve -p 3000 --watch",
     "test": "wtr --node-resolve ./**/*.spec.js",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "gh": "gh-pages -d ."
   },
   "author": {
     "name": "Timothy Foster",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@open-wc/testing": "^2.5.33",
     "@web/dev-server": "^0.1.22",
-    "@web/test-runner": "^0.13.17"
+    "@web/test-runner": "^0.13.17",
+    "gh-pages": "^3.2.3"
   }
 }
