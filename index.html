@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>toggle-switch Element</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Source+Code+Pro:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="demo.css" />
+        <script type="module" src="lib/define.js"></script>
+        <script type="module" src="demo.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>&lt;toggle-switch&gt; Demo</h1>
+            <section id="main-demo" class="demo">
+                <figure>
+                    <p><toggle-switch aria-label="Main Demo"></toggle-switch></p>
+                    <p class="result">Off</p>
+                </figure>
+                <pre><code><mark><strong>&lt;toggle-switch></strong><strong>&lt;/toggle-switch></strong></mark></code></pre>
+            </section>
+            <section id="style-demo" class="demo">
+                <figure>
+                    <p><toggle-switch class="fancy" aria-label="Fancy Demo"></toggle-switch></p>
+                    <p class="result">Styleish!</p>
+                </figure>
+                <pre><code><mark><strong>&lt;toggle-switch class="fancy"></strong><strong>&lt;/toggle-switch></strong></mark>
+<mark><strong>&lt;style></strong></mark>
+    <mark>.fancy::part(track)</mark> {
+        <mark class="attr">padding</mark>: 0.125em;
+        <mark class="attr">border-radius</mark>: 1em;
+        <mark class="attr">background-color</mark>: hsl(0, 0%, 67%);
+    }
+
+    <mark>.fancy::part(slider)</mark> {
+        <mark class="attr">border-radius</mark>: 1em;
+        <mark class="attr">background-color</mark>: hsl(0, 0%, 100%);
+        <mark class="attr">box-shadow</mark>: 0.0625em 0.0625em 0.125em hsla(0, 0%, 0%, 0.25);
+    }
+
+    <mark>.fancy[checked]::part(track)</mark> {
+        <mark class="attr">background-color</mark>: hsl(211, 69%, 57%);
+    }
+<mark><strong>&lt;/style></strong></mark>
+                </code></pre>
+            </section>
+        </main>
+        <footer>
+            <p>Made by <a href="https://auroratide.com">Timothy Foster</a></p>
+        </footer>
+    </body>
+</html>
