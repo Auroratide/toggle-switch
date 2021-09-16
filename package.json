@@ -13,7 +13,8 @@
   "module": "lib/toggle-switch.js",
   "scripts": {
     "start": "wds --node-resolve -p 3000 --watch",
-    "test": "wtr --node-resolve ./**/*.spec.js"
+    "test": "wtr --node-resolve ./**/*.spec.js",
+    "prepublishOnly": "npm run test"
   },
   "author": {
     "name": "Timothy Foster",
