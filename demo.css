@@ -1,5 +1,6 @@
 :root {
     --font: 'Source Sans Pro', sans-serif;
+    --font-styleish: 'Henny Penny', cursive;
 
     --color-bg: hsl(0, 0%, 93%);
     --color-fg: hsl(0, 0%, 100%);
@@ -103,6 +104,10 @@ code mark {
     color: hsl(120, 47%, 65%);
 }
 
+code mark.attr {
+    color: hsl(48, 89%, 55%);
+}
+
 code mark strong {
     color:hsl(23, 95%, 52%);
 }
@@ -114,4 +119,24 @@ code mark strong {
 .active {
     color: var(--color-success);
     font-weight: bold;
+}
+
+.styleish {
+    font-family: var(--font-styleish);
+}
+
+.fancy::part(track) {
+    padding: 0.125em;
+    border-radius: 1em;
+    background-color: hsl(0, 0%, 67%);
+}
+
+.fancy::part(slider) {
+    border-radius: 1em;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0.0625em 0.0625em 0.125em hsla(0, 0%, 0%, 0.25);
+}
+
+.fancy[checked]::part(track) {
+    background-color: hsl(var(--color-primary));
 }
