@@ -9,7 +9,8 @@
     "web-component"
   ],
   "type": "module",
-  "main": "index.js",
+  "main": "lib/toggle-switch.js",
+  "module": "lib/toggle-switch.js",
   "scripts": {
     "start": "wds --node-resolve -p 3000 --watch",
     "test": "wtr --node-resolve ./**/*.spec.js"
