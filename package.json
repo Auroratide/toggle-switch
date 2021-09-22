@@ -15,7 +15,7 @@
     "start": "wds --node-resolve -p 3000 --watch",
     "test": "wtr --node-resolve ./**/*.spec.js",
     "prepublishOnly": "npm run test",
-    "gh": "gh-pages --remove './node_modules' -d ."
+    "gh": "gh-pages -d ."
   },
   "author": {
     "name": "Timothy Foster",

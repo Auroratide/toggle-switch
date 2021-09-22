@@ -112,6 +112,20 @@ code mark strong {
     color:hsl(23, 95%, 52%);
 }
 
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    padding-right: 0.25em;
+}
+
+label::after {
+    content: ': ';
+}
+
 .demo {
     margin-bottom: 6rem;
 }
@@ -123,6 +137,10 @@ code mark strong {
 
 .styleish {
     font-family: var(--font-styleish);
+}
+
+.fancy {
+    height: 1.125em;
 }
 
 .fancy::part(track) {
