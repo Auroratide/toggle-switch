@@ -17,18 +17,24 @@
             <h1>&lt;toggle-switch&gt; Demo</h1>
             <section id="main-demo" class="demo">
                 <figure>
-                    <p><toggle-switch aria-label="Main Demo"></toggle-switch></p>
+                    <p class="switch-container"><label for="default-switch">Default Switch</label><toggle-switch id="default-switch"></toggle-switch></p>
                     <p class="result">Off</p>
                 </figure>
-                <pre><code><mark><strong>&lt;toggle-switch></strong><strong>&lt;/toggle-switch></strong></mark></code></pre>
+                <pre><code><mark>&lt;label for="default-switch"></mark>Default Switch<mark>&lt;/label></mark>
+<mark><strong>&lt;toggle-switch id="default-switch"></strong><strong>&lt;/toggle-switch></strong></mark></code></pre>
             </section>
             <section id="style-demo" class="demo">
                 <figure>
-                    <p><toggle-switch class="fancy" aria-label="Fancy Demo"></toggle-switch></p>
+                    <p class="switch-container"><label for="fancy-switch">Fancy Switch</label><toggle-switch id="fancy-switch" class="fancy"></toggle-switch></p>
                     <p class="result">Styleish!</p>
                 </figure>
-                <pre><code><mark><strong>&lt;toggle-switch class="fancy"></strong><strong>&lt;/toggle-switch></strong></mark>
+                <pre><code><mark>&lt;label for="fancy-switch"></mark>Fancy Switch<mark>&lt;/label></mark>
+<mark><strong>&lt;toggle-switch id="fancy-switch" class="fancy"></strong><strong>&lt;/toggle-switch></strong></mark>
 <mark><strong>&lt;style></strong></mark>
+    <mark>.fancy</mark> {
+        <mark class="attr">height</mark>: 1.125em;
+    }
+
     <mark>.fancy::part(track)</mark> {
         <mark class="attr">padding</mark>: 0.125em;
         <mark class="attr">border-radius</mark>: 1em;
