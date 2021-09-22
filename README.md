@@ -27,13 +27,13 @@ import '@auroratide/toggle-switch/lib/define.js'
 `<toggle-switch>` is an **inline markup element** that you can use in your HTML document.
 
 ```html
-<p>Enable: <toggle-switch></toggle-switch></p>
+<label>Enable: <toggle-switch></toggle-switch></label>
 ```
 
 By default, the switch starts in the **off** position. You can have it start in the **on** state instead:
 
 ```html
-<p>Enable: <toggle-switch checked></toggle-switch></p>
+<label>Enable: <toggle-switch checked></toggle-switch></label>
 ```
 
 ### All Attributes
