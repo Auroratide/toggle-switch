@@ -41,6 +41,7 @@ By default, the switch starts in the **off** position. You can have it start in 
 | Attribute | Default | Description |
 | ------------- | --------- | ------------- |
 | `checked` | - | Whether the switch is on or not |
+| `disabled` | - | Whether the switch can change states |
 
 ## Style API
 
@@ -92,6 +93,7 @@ The element exposes a function to programmatically toggle its state:
 Each attribute can be accessed as a Javascript property.
 
 * `elem.checked`
+* `elem.disabled`
 
 ### Events
 
